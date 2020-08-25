@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body, html {
+  height: 100%;
   }
+.background {
+  background-image: url(shenzhen.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#login-form {
+  width: 400px;
+  height: 350px;
+  left:35%;
+  padding-top: 50px;
+  top: 30%;
+  padding-bottom: 50px;
+  position: absolute;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#signup-form {
+  width: 400px;
+  height: 350px;
+  left:35%;
+  padding-top: 50px;
+  top: 20%;
+  padding-bottom: 50px;
+  position: absolute;
 }
 
-.App-link {
-  color: #61dafb;
+#login-image-group{
+  max-width: 200px;
+  max-height: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.badge-pill{
+  float: right;
+}
+
+.black-font{
+  color: black;
+}
+
+.override.list-group-item.active {
+  z-index: 2;
+  color: #fff;
+  background-color: #63c1cf;
+  border-color: #63c1cf;
+}
+
+.White{
+  color: white
+}
+
+.SignUpButton {
+  width: 120px;
+  height: 50px;
+  top: 20%;
+  left: 80%;
+  position: absolute;
+}
+
+.Landlord{
+  width: 200px;
+  height: 50px;
+  top: 10%;
+  left: 80%;
+  position: absolute;
+  
+}
+
+.login-form{
+  margin-left: 500px;
+}
+.signupbackground {
+  background-image: url(signupbackground.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#submitbutton {
+  height: 80px;
+  width: 100px;
 }
