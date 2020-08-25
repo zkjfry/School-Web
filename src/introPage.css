@@ -3,6 +3,18 @@
     opacity: 1;
 }
 
-.home-card{
-    background-color: rgb(255, 255, 255);
+.home-card-left{
+    display: block;
+    transform: translateY(-100%);
+    opacity: 1;
+    transition: transform 1s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+    height: 50vh;
+}
+
+#home-page {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
 }

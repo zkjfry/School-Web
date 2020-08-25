@@ -1,21 +1,23 @@
 import React from 'react';
 import SignInPage from './signInPage'
 import IntroPage from './introPage'
-import {BrowserRouter, Switch, Route } from 'react-router-dom';
+import MainPage from './mainpage'
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 
 function App() {
 
-    return (
-      <div>
+  return (
+    <div>
       <BrowserRouter>
-        <Switch>  
+        <Switch>
           <Route exact path='/' component={IntroPage} />
           <Route exact path='/signIn' component={SignInPage} />
+          <Route exact path='/main' component={MainPage} />
         </Switch>
-       </BrowserRouter>
-     </div>
-    );
-  }
+      </BrowserRouter>
+    </div>
+  );
+}
 
 export default App;
